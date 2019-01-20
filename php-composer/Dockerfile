@@ -1,4 +1,4 @@
-FROM php:7.1.24-cli-alpine
+FROM php:7.2.14-cli-alpine
 
 RUN apk add zip
 
