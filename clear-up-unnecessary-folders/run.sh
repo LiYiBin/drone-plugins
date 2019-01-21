@@ -8,7 +8,7 @@ BACKUP_NUM=${PLUGIN_BACKUP_NUM:-$BACKUP_NUM}
 echo --- Start: Clear folders $(date +'%Y/%m/%d %H:%M:%S')
 
 # validate variables
-if [[ -z $FOLDER_PREFIX || -z $BACKUP_NUM ]]; then
+if [[ -z "$FOLDER_PREFIX" || -z "$BACKUP_NUM" ]]; then
   echo 'You must have folder_prefix AND backup_num variables.'
   exit 1
 fi
